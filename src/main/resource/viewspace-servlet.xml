@@ -18,7 +18,8 @@
                            http://www.springframework.org/schema/mvc 
                            http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
        
-       <context:componet-scan base-package="com.mywork.living.controller" />
+       <!-- 扫描类包, 将注解的类自动转化为bean, 完成bean的注入 -->
+       <context:componet-scan base-package="com.mywork.living" />
        
        <!-- 配置视图解析器 -->        
        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
